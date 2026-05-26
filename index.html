@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ReliantNY | Business Solutions</title>
+
+  <meta name="description"
+    content="ReliantNY connects businesses with Remote organised Teams & Offshore teams, Provides Onsite talent solutions, and SaaS Industry Specific Solutions through structured partnerships and curated introductions.">
+
+  <!-- PREVENT WHITE FLASH -->
+  <style>
+    html {
+      background: #0a0f2c;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0a0f2c;
+      color: #e6e9f2;
+      opacity: 1;
+    }
+
+    /* HEADER */
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 25px;
+    }
+
+    .logo-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #0a66c2, #4fc3f7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 30px rgba(79, 195, 247, 0.25);
+    }
+
+    .logo-icon i {
+      color: white;
+      font-size: 34px;
+    }
+
+    .logo-text {
+      font-size: 42px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #ffffff;
+    }
+
+    header p {
+      color: #bfc7e0;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.8;
+      font-size: 18px;
+    }
+
+    /* NAV */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding-bottom: 30px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      opacity: 0.9;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      opacity: 1;
+    }
+
+    /* GENERAL */
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 45px 20px 80px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 50px;
+      font-size: 40px;
+    }
+
+    /* SLIDESHOW */
+    .slideshow {
+      position: relative;
+      max-width: 900px;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 16px;
+    }
+
+    .slide {
+      display: none;
+      position: relative;
+      text-decoration: none;
+      color: white;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+      filter: brightness(0.55);
+    }
+
+    .slide-content {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+    }
+
+    .slide-content h3 {
+      font-size: 46px;
+      margin: 0;
+    }
+
+    .prev,
+    .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5);
+      border: none;
+      color: white;
+      font-size: 22px;
+      padding: 12px 18px;
+      cursor: pointer;
+      border-radius: 8px;
+      z-index: 5;
+    }
+
+    .prev {
+      left: 15px;
+    }
+
+    .next {
+      right: 15px;
+    }
+
+    /* SECTIONS */
+    .about-section {
+      background: rgba(230, 230, 230, 0.03);
+    }
+
+    .about p,
+    .outcomes p {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+      line-height: 1.9;
+      color: #c6cde2;
+      font-size: 18px;
+    }
+
+    .outcomes-section {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .contact-section {
+      background: rgba(230, 230, 230, 0.02);
+    }
+
+    /* FORM */
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    input,
+    textarea {
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      background: rgba(230, 230, 230, 0.05);
+      color: white;
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #0a66c2, #4fc3f7);
+      border: none;
+      padding: 15px;
+      border-radius: 10px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #888;
+    }
+  </style>
+
+  <!-- NON-BLOCKING FONT AWESOME -->
+  <link rel="preload"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+
+  <noscript>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </noscript>
+
+  <!-- PRELOAD FIRST SLIDE IMAGE (reduces flicker) -->
+  <link rel="preload" as="image"
+    href="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+</head>
+
+<body>
+
+<header>
+  <div class="logo-wrap">
+    <div class="logo-icon">
+      <i class="fa-solid fa-layer-group"></i>
+    </div>
+    <div class="logo-text">ReliantNY</div>
+  </div>
+
+  <p>
+    Connecting businesses with scalable workforce solutions,
+    outsourced operations, and Technology Vendor partnerships.
+  </p>
+</header>
+
+<nav>
+  <a href="#services">Services</a>
+  <a href="#about">About</a>
+  <a href="#outcomes">Outcomes</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="services">
+  <div class="container">
+
+    <div class="slideshow">
+
+      <a href="bpo.html" class="slide active">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+        <div class="slide-content">
+          <h3>Remote organised Teams</h3>
+        </div>
+      </a>
+
+      <a href="talent.html" class="slide">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978">
+        <div class="slide-content">
+          <h3>Talent Solutions</h3>
+        </div>
+      </a>
+
+      <a href="aisaas.html" class="slide">
+        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995">
+        <div class="slide-content">
+          <h3>Custom Technology Solutions</h3>
+        </div>
+      </a>
+
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="about" class="about-section">
+  <div class="container about">
+    <h2>About ReliantNY</h2>
+    <p>
+      ReliantNY connects businesses with vetted Remote organised Onshore & Offshore Teams,
+      Onsite Talent, and Industry Specific Technology Solutions.
+    </p>
+  </div>
+</section>
+
+<section id="outcomes" class="outcomes-section">
+  <div class="container outcomes">
+    <h2>Business Outcomes</h2>
+
+    <p>
+      Improved vendor alignment, cost optimization, and streamlined workflows.
+    </p>
+
+    <p>
+      Better operational efficiency and faster decision-making.
+    </p>
+
+    <p>
+      Simplified sourcing and scalable workforce access.
+    </p>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="container">
+
+    <h2>Contact Us</h2>
+
+    <form action="https://formsubmit.co/support@reliantny.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Business Email" required>
+      <textarea rows="5" name="message" placeholder="Tell us about your requirements"></textarea>
+
+      <button class="btn" type="submit">Send Inquiry</button>
+    </form>
+
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 ReliantNY</p>
+</footer>
+
+<script>
+let index = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlide(i) {
+  slides.forEach(slide => slide.classList.remove("active"));
+  slides[i].classList.add("active");
+}
+
+function nextSlide() {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}
+
+function prevSlide() {
+  index = (index - 1 + slides.length) % slides.length;
+  showSlide(index);
+}
+
+document.querySelector(".next").onclick = nextSlide;
+document.querySelector(".prev").onclick = prevSlide;
+
+setInterval(nextSlide, 5000);
+</script>
+
+</body>
+</html>
+
+

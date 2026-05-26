@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Custom Industry Technology Partnerships | ReliantNY</title>
+
+  <meta name="description"
+    content="We connect businesses with industry-specific solutions through curated Tech System partnerships, helping companies discover tools that improve efficiency, automation, and growth.">
+
+  <style>
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0a0f2c;
+      color: #e6e9f2;
+    }
+
+    /* NAV */
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 30px;
+      background: rgba(0,0,0,0.4);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav a:hover {
+      opacity: 0.8;
+    }
+
+    /* HERO */
+
+    .hero {
+      height: 70vh;
+      background: url('https://images.unsplash.com/photo-1677442136019-21780ecad995') center/cover no-repeat;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.65);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 850px;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      color: #d9d9d9;
+      font-size: 20px;
+      line-height: 1.8;
+    }
+
+    /* CONTENT */
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 90px 20px;
+    }
+
+    .content h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .content p {
+      color: #c6cde2;
+      line-height: 1.9;
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+
+    /* CONTACT */
+
+    .contact-section {
+      background: rgba(255,255,255,0.03);
+      padding: 80px 20px;
+    }
+
+    .contact-section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 38px;
+      color: #fff;
+    }
+
+    form {
+      max-width: 550px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    input,
+    textarea {
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.05);
+      color: white;
+      font-size: 16px;
+    }
+
+    textarea {
+      min-height: 140px;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #aaa;
+    }
+
+    .btn {
+      background: linear-gradient(135deg,#0a66c2,#4fc3f7);
+      border: none;
+      padding: 15px;
+      border-radius: 10px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #888;
+    }
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:42px;
+      }
+
+      .hero p{
+        font-size:17px;
+      }
+
+      .content p{
+        font-size:16px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<div class="nav">
+  <a href="index.html">← Home</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <h1>Custom  Technology Vendor Partnerships</h1>
+
+    <p>
+      We connect companies with industry-specific SaaS vendors through curated partnerships,
+      helping organizations discover the right tools to improve efficiency, automation, and growth.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- CONTENT -->
+
+<section class="container content">
+
+  <h2>What We Do</h2>
+
+  <p>
+    ReliantNY operates as a B2B Technology partner network, connecting businesses with carefully selected software vendors
+    that solve specific operational and industry challenges.
+  </p>
+
+  <p>
+    Instead of traditional consulting or generic software recommendations, we focus on structured introductions between
+    companies and Custom Technology Solutions providers that align with their exact business needs.
+  </p>
+
+  <h2>How It Works</h2>
+
+  <p>
+    1. We understand your business requirements and current workflows.<br><br>
+    2. We match you with relevant SaaS vendors that specialize in your industry.<br><br>
+    3. We facilitate introductions and partnership discussions where appropriate.<br><br>
+    4. When a successful partnership or subscription is formed, we may earn a referral or partner commission from vendors.
+  </p>
+
+  <h2>Why Businesses Use This Model</h2>
+
+  <p>
+    This approach saves time spent researching software, reduces mismatched vendor selection,
+    and gives companies access to solutions already validated within their industry ecosystem.
+  </p>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact-section" id="contact">
+
+  <h2>Start a Conversation</h2>
+
+  <form action="https://formsubmit.co/support@reliantny.com" method="POST">
+
+    <input type="text" name="name" placeholder="Full Name" required>
+
+    <input type="email" name="email" placeholder="Business Email" required>
+
+    <textarea name="message"
+      placeholder="Tell us what type of software or solution you're looking for"></textarea>
+
+    <button class="btn" type="submit">
+      Submit Inquiry
+    </button>
+
+  </form>
+
+</section>
+
+<footer>
+
+  <p>&copy; 2026 ReliantNY</p>
+
+</footer>
+
+</body>
+</html>
